@@ -1,0 +1,283 @@
+/* General Body & Reset Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #eef2ff, #e0e7ff);
+    color: #1e293b;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    transition: background 0.4s ease-in-out;
+}
+
+/* Container */
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header / Hero Section */
+.hero-section {
+    background: linear-gradient(90deg, #4b0082, #6a5acd);
+    color: white;
+    padding: 35px 0;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    animation: slideFadeDown 1s ease-out;
+}
+
+.hero-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.company-info {
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    animation: fadeInLeft 1s ease-in;
+}
+
+.logo-text {
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.logo-tagline {
+    font-size: 1em;
+    margin-left: 8px;
+    color: #dcd6f7;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 0.95em;
+    text-align: right;
+    line-height: 1.5;
+    animation: fadeInRight 1s ease-in;
+}
+
+.contact-info a {
+    color: #f8fafc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #00d4ff;
+}
+
+/* Main Content */
+.main-content {
+    padding: 60px 0;
+    background: #f0f4ff;
+    animation: fadeInUp 1.5s ease;
+}
+
+/* Personal Intro */
+.personal-intro {
+    background: #ffffff;
+    padding: 60px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: zoomIn 0.8s ease-out;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #ff6b6b;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.personal-intro h1 {
+    font-size: 3em;
+    color: #1f2937;
+    margin-bottom: 10px;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.tagline {
+    font-size: 1.6em;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.role {
+    font-size: 1.6em;
+    color: #00c9a7;
+    border-bottom: 2px solid #dbeafe;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+}
+
+.personal-intro p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #475569;
+}
+
+.why-love-webdev {
+    font-style: italic;
+    color: #64748b;
+}
+
+/* Skills Section */
+.skills-section {
+    background: #ffffff;
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 2s ease-out;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #1e293b;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.skills-section li {
+    background-color: #f0fcff;
+    padding: 20px;
+    border-left: 6px solid #00d4ff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 1.05em;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-section li::before {
+    content: "🚀";
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    font-size: 1.2em;
+}
+
+.skills-section li:hover {
+    background-color: #e2faff;
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    text-align: center;
+    padding: 35px 0;
+    margin-top: 60px;
+    font-size: 0.95em;
+    animation: fadeIn 1s ease-in;
+}
+
+footer a {
+    color: #38bdf8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideFadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .personal-intro h1 {
+        font-size: 2.2em;
+    }
+
+    .tagline, .role {
+        font-size: 1.2em;
+    }
+
+    .skills-section ul {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .personal-intro, .skills-section {
+        padding: 30px;
+    }
+
+    .personal-intro h1 {
+        font-size: 1.8em;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+}
