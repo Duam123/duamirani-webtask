@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills - Cute Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff0f6;
+      color: #333;
+    }
+
+    .header {
+      background-color: #ff87ab;
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      border-bottom: 5px dashed white;
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+    }
+
+    .skills-container {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .skill-group {
+      margin-bottom: 3rem;
+    }
+
+    .skill-group h2 {
+      font-size: 1.8rem;
+      color: #ff3e6c;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(255, 0, 128, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 30px rgba(255, 0, 128, 0.2);
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      color: #ff3e6c;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .card img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>💼 My Technical Skills</h1>
+    <p>Making beautiful and functional websites ✨</p>
+  </header>
+
+  <main class="skills-container">
+    <section class="skill-group">
+      <h2>Frontend Development</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+          <h3>HTML5</h3>
+          <p>Clean structure with SEO-friendly elements.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+          <h3>CSS3</h3>
+          <p>Beautiful designs using Flexbox, Grid & more.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <h3>JavaScript</h3>
+          <p>Dynamic UI with ES6+ and DOM manipulation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill-group">
+      <h2>Backend & Tools</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+          <h3>PHP</h3>
+          <p>Backend scripting and data handling.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+          <h3>Git & GitHub</h3>
+          <p>Version control & project collaboration.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+          <h3>VS Code</h3>
+          <p>Lightweight, fast code editor with extensions.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
